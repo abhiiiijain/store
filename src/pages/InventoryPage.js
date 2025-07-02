@@ -68,7 +68,7 @@ export default function Inventory() {
       {/* Main content */}
       <main className="flex-1 p-8">
         {/* Inventory header and tabs */}
-        <h2 className="text-gray-900 font-semibold text-xl mb-4">Inventory</h2>
+        <h2 className="text-2xl font-bold mb-4">Inventory</h2>
         <div className="border-b border-gray-300 mb-6 flex gap-8">
           <button
             className={`py-2 px-4 -mb-px font-semibold border-b-2 ${

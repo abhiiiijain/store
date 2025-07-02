@@ -41,7 +41,7 @@ const employeesData = [
   },
 ];
 
-export default function App() {
+export default function EmployeePage() {
   const [employees, setEmployees] = useState(employeesData);
   const [editingId, setEditingId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -70,10 +70,10 @@ export default function App() {
   return (
     <div className="flex h-screen font-sans bg-[#f1f6f9]">
       <Sidebar />
-      <div className="flex w-full h-screen bg-gray-50 text-gray-700 font-sans">
-        <main className="flex-1 p-8 overflow-auto">
+      <div className="flex w-full h-screen text-gray-700 font-sans">
+        <main className="flex-1 p-8 overflow-auto bg-[#f1f6f9]">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-xl font-semibold mb-6">Employees</h2>
+            <h2 className="text-2xl font-bold mb-4">Employees</h2>
 
             <div className="bg-white shadow rounded-lg overflow-hidden">
               <table className="w-full text-left">

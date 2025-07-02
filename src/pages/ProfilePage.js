@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 
-const ProfilePage = () => {
+export default function ProfilePage() {
   return (
     <div className="flex h-screen font-sans bg-[#f1f6f9]">
       {/* Sidebar */}
@@ -9,7 +9,7 @@ const ProfilePage = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         <main className="flex-1 p-8 bg-[#f1f6f9]">
-          <h2 className="mb-6 text-[#333] font-semibold text-2xl">Profile</h2>
+          <h2 className="text-2xl font-bold mb-4">Profile</h2>
           <section className="p-6 flex items-center gap-6 max-w-3xl">
             {/* Profile Image Placeholder */}
             <div
@@ -38,6 +38,4 @@ const ProfilePage = () => {
       </div>
     </div>
   );
-};
-
-export default ProfilePage;
+}

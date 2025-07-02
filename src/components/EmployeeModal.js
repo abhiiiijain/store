@@ -9,7 +9,7 @@ export default function EmployeeAddModal({ isOpen, onClose, onRegister }) {
     confirmPassword: "",
     gender: "",
     age: "",
-    type: "Manager",
+    type: "Employee",
   });
 
   if (!isOpen) return null;
@@ -35,7 +35,7 @@ export default function EmployeeAddModal({ isOpen, onClose, onRegister }) {
       confirmPassword: "",
       gender: "",
       age: "",
-      type: "Manager",
+      type: "Employee",
     });
     onClose();
   };
@@ -54,7 +54,7 @@ export default function EmployeeAddModal({ isOpen, onClose, onRegister }) {
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* Account and fields */}
             <div className="grid grid-cols-2 gap-4 items-center">
-              <label className="text-right font-medium text-gray-700">Account</label>
+              <label className="text-center font-medium text-gray-700">Account</label>
               <div className="space-y-2">
                 <input
                   type="text"

@@ -1,31 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/inventory1.png";
 
 const Header = () => (
   <>
-  {/* routing to be hided */}
-    <header>
+    {/* routing to be hided */}
+    {/* <header>
       <nav>
-        <Link to="/">| Login</Link> |
-        <Link to="/home">| Home</Link> |
+        <Link to="/">| Login</Link> |<Link to="/home">| Home</Link> |
         <Link to="/employee">| Employee</Link> |
         <Link to="/inventory">| Inventory</Link> |
         <Link to="/transaction">| Transactions</Link> |
         <Link to="/profile">| Profile</Link> |
         <Link to="/register">| Register</Link> |
       </nav>
-    </header>
+    </header> */}
 
     {/* Navbar */}
     <nav className="bg-blue-600 px-6 py-4 flex items-center justify-between">
       {/* Logo */}
-      <div className="font-bold text-lg bg-white text-blue-600 px-3 py-1 rounded shadow">
-        <img
-          src={logo}
-          alt="Logo"
-          style={{ height: "40px", marginRight: "15px" }}
-        />
+      <div className=" bg-white rounded shadow">
+        <Link to="/profile">
+          <img
+            src={logo}
+            alt="Logo"
+            style={{ height: "40px", marginRight: "15px" }}
+          />
+        </Link>
       </div>
       {/* Search and blank */}
       <div className="flex space-x-6 items-center text-white">
