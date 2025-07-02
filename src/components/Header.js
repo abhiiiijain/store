@@ -20,7 +20,7 @@ const Header = () => (
     {/* Navbar */}
     <nav className="bg-blue-600 px-6 py-4 flex items-center justify-between">
       {/* Logo */}
-      <div className="text-white font-bold text-lg bg-white text-blue-600 px-3 py-1 rounded shadow">
+      <div className="font-bold text-lg bg-white text-blue-600 px-3 py-1 rounded shadow">
         <img
           src={logo}
           alt="Logo"
@@ -29,9 +29,10 @@ const Header = () => (
       </div>
       {/* Search and blank */}
       <div className="flex space-x-6 items-center text-white">
+        <div className="w-32 h-1 bg-blue-300 rounded"></div>
         <div className="w-24 h-1 bg-blue-300 rounded"></div>
         <div className="w-24 h-1 bg-blue-300 rounded"></div>
-        <div className="w-24 h-1 bg-blue-300 rounded"></div>
+        <div className="w-32 h-1 bg-blue-300 rounded"></div>
         <button aria-label="search" className="focus:outline-none">
           <svg
             className="w-5 h-5 text-white"
