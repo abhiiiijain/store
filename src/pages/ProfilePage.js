@@ -1,29 +1,11 @@
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const ProfilePage = () => {
   return (
     <div className="flex h-screen font-sans bg-[#f1f6f9]">
       {/* Sidebar */}
-      <aside className="w-[220px] bg-white shadow-md flex flex-col">
-        <nav className="flex-1 pt-6">
-          <ul className="list-none pl-5 text-[#586e75]">
-            <li className="mb-6 cursor-pointer flex items-center">
-              <span className="mr-2 text-lg text-[#2c3e50]">🏠</span> Home
-            </li>
-            <li className="mb-6 cursor-pointer flex items-center">
-              <span className="mr-2 text-lg text-[#2c3e50]">📋</span> Inventory
-            </li>
-            <li className="mb-6 cursor-pointer flex items-center">
-              <span className="mr-2 text-lg text-[#2c3e50]">👥</span> Employees
-            </li>
-            <li className="mb-6 cursor-pointer flex items-center">
-              <span className="mr-2 text-lg text-[#2c3e50]">📄</span>{" "}
-              Transactions
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
+      <Sidebar />
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         <main className="flex-1 p-8 bg-[#f1f6f9]">
@@ -36,7 +18,6 @@ const ProfilePage = () => {
               role="img"
             />
             {/* Profile Info */}
-            
 
             <div className="flex-grow">
               <p className="font-bold text-xl text-[#1e293b] mb-1">User Name</p>
