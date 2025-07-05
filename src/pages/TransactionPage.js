@@ -59,8 +59,8 @@ export default function Transactions() {
           <button
             className={`py-2 px-4 -mb-px font-semibold border-b-2 ${
               activeTab === "buy"
-                ? "border-blue-600 text-blue-600"
-                : "border-transparent text-gray-600 hover:text-blue-600"
+                ? "border-primary text-primary"
+                : "border-transparent text-gray-600 hover:text-primary"
             }`}
             onClick={() => setActiveTab("buy")}
             aria-current={activeTab === "buy" ? "page" : undefined}>
@@ -69,8 +69,8 @@ export default function Transactions() {
           <button
             className={`py-2 px-4 -mb-px font-semibold border-b-2 ${
               activeTab === "sell"
-                ? "border-blue-600 text-blue-600"
-                : "border-transparent text-gray-600 hover:text-blue-600"
+                ? "border-primary text-primary"
+                : "border-transparent text-gray-600 hover:text-primary"
             }`}
             onClick={() => setActiveTab("sell")}
             aria-current={activeTab === "sell" ? "page" : undefined}>
@@ -79,8 +79,8 @@ export default function Transactions() {
           <button
             className={`py-2 px-4 -mb-px font-semibold border-b-2 ${
               activeTab === "history"
-                ? "border-blue-600 text-blue-600"
-                : "border-transparent text-gray-600 hover:text-blue-600"
+                ? "border-primary text-primary"
+                : "border-transparent text-gray-600 hover:text-primary"
             }`}
             onClick={() => setActiveTab("history")}
             aria-current={activeTab === "history" ? "page" : undefined}>
@@ -165,7 +165,7 @@ export default function Transactions() {
                     className="w-full p-2 border bg-gray-300 rounded mb-2"
                   />
                   <div className="flex justify-center">
-                    <button className="text-blue-600 text-sm p-2 underline border border-blue-500">
+                    <button className="text-primary text-sm p-2 underline border border-primary">
                       + Add Product
                     </button>
                   </div>
@@ -173,7 +173,7 @@ export default function Transactions() {
               </div>
             </div>
             <div className="flex justify-center mt-6">
-              <button className="bg-blue-500 text-white p-2 w-24 text-center rounded-full ">
+              <button className="bg-primary text-white p-2 w-24 text-center rounded-full ">
                 Buy
               </button>
             </div>
@@ -256,7 +256,7 @@ export default function Transactions() {
                     className="w-full p-2 border bg-gray-300 rounded mb-2"
                   />
                   <div className="flex justify-center">
-                    <button className="text-blue-600 text-sm p-2 underline border border-blue-500">
+                    <button className="text-primary text-sm p-2 underline border border-primary">
                       + Add Product
                     </button>
                   </div>
@@ -264,7 +264,7 @@ export default function Transactions() {
               </div>
             </div>
             <div className="flex justify-center mt-6">
-              <button className="bg-blue-500 text-white p-2 w-24 text-center rounded-full ">
+              <button className="bg-primary text-white p-2 w-24 text-center rounded-full ">
                 Sell
               </button>
             </div>
@@ -275,7 +275,7 @@ export default function Transactions() {
         {activeTab === "history" && (
           <div className="overflow-x-auto rounded bg-white shadow">
             <table className="min-w-full divide-y divide-gray-200">
-              <thead className="bg-blue-50">
+              <thead className="bg-primary/10">
                 <tr>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     ID
@@ -302,12 +302,12 @@ export default function Transactions() {
                 {transactions.map((transaction) => (
                   <tr
                     key={transaction.id}
-                    className="hover:bg-blue-50 transition-colors">
+                    className="hover:bg-primary/10 transition-colors">
                     <td className="px-6 py-3 text-left">{transaction.id}</td>
                     <td>
                       <button
                         aria-label="Download Transaction"
-                        className="p-1 text-gray-600 hover:text-blue-600">
+                        className="p-1 text-gray-600 hover:text-primary">
                         <DownloadIcon className="h-5 w-5" />
                       </button>
                     </td>

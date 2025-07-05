@@ -17,7 +17,7 @@ const Header = () => (
     </header> */}
 
     {/* Navbar */}
-    <nav className="bg-blue-600 px-6 py-4 flex items-center justify-between">
+    <nav className="bg-primary px-6 py-4 flex items-center justify-between">
       {/* Logo */}
       <div className=" bg-white rounded shadow">
         <Link to="/profile">

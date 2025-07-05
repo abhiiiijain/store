@@ -127,7 +127,7 @@ export default function EmployeeAddModal({ isOpen, onClose, onRegister }) {
                       value="Manager"
                       checked={form.type === "Manager"}
                       onChange={handleChange}
-                      className="accent-blue-600"
+                      className="accent-primary"
                     />
                     <span>Manager</span>
                   </label>
@@ -138,7 +138,7 @@ export default function EmployeeAddModal({ isOpen, onClose, onRegister }) {
                       value="Employee"
                       checked={form.type === "Employee"}
                       onChange={handleChange}
-                      className="accent-blue-600"
+                      className="accent-primary"
                     />
                     <span>Employee</span>
                   </label>
@@ -148,7 +148,7 @@ export default function EmployeeAddModal({ isOpen, onClose, onRegister }) {
             <div className="text-center pt-4">
               <button
                 type="submit"
-                className="px-8 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition"
+                className="px-8 py-2 bg-primary text-white rounded-full hover:bg-blue-700 transition"
               >
                 Register
               </button>

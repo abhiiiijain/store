@@ -95,7 +95,7 @@ export default function EmployeePage() {
                         <button
                           // onClick={() => onEdit(emp.id)}
                           aria-label={`Edit ${emp.name}`}
-                          className="p-1 text-gray-600 hover:text-blue-600">
+                          className="p-1 text-gray-600 hover:text-primary">
                           <PencilIcon className="h-5 w-5" />
                         </button>
                         <button
@@ -121,7 +121,7 @@ export default function EmployeePage() {
             <button
               onClick={openAddForm}
               aria-label="Add employee"
-              className="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+              className="fixed bottom-8 right-8 bg-primary hover:bg-primary/80 text-white rounded-full p-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
               <PlusIcon className="h-6 w-6" />
             </button>
           )}

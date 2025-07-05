@@ -82,7 +82,7 @@ const productSalesData = [
 
 export default function HomePage() {
   return (
-    <div className="flex h-screen font-sans bg-[#f1f6f9]">
+    <div className="flex h-screen font-sans bg-primary bg-opacity-10">
       {/* Sidebar */}
       <SideBar />
 
