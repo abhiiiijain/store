@@ -72,7 +72,6 @@ export default function EmployeePage() {
       <Sidebar />
       <div className="flex w-full h-screen text-gray-700 font-sans">
         <main className="flex-1 p-8 overflow-auto bg-[#f1f6f9]">
-          <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Employees</h2>
 
             <div className="bg-white shadow rounded-lg overflow-hidden">
@@ -114,7 +113,7 @@ export default function EmployeePage() {
                 </tbody>
               </table>
             </div>
-          </div>
+          
 
           {/* Floating Add Button */}
           {editingId === null && (

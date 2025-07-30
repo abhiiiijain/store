@@ -131,7 +131,7 @@ export default function Inventory() {
                     return (
                       <tr
                         key={id}
-                        className="hover:bg-primary/10 transition-colors">
+                        className="hover:bg-primary transition-colors">
                         {activeTab === "all" && (
                           <td className="px-6 py-3 flex gap-2 text-lg text-gray-600">
                             <button
