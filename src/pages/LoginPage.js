@@ -26,23 +26,23 @@ export default function LoginPage() {
                 <input
                   type="email"
                   placeholder="Email ID"
-                  className="w-full py-2 px-4 rounded bg-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full py-2 px-4 rounded bg-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <input
                   type="password"
                   placeholder="Password"
-                  className="w-full py-2 px-4 rounded bg-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full py-2 px-4 rounded bg-gray-300 placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-2 rounded-full hover:bg-blue-700 transition">
+                  className="w-full bg-primary text-white py-2 rounded-full hover:bg-primary/80 transition">
                   Login
                 </button>
               </form>
               <p className="mt-6 text-center text-sm text-gray-600">
                 New user?{" "}
                 <Link to="/register">
-                  <span className="text-blue-700 hover:underline font-medium">
+                  <span className="text-primary/80 hover:underline font-medium">
                     Register
                   </span>
                 </Link>

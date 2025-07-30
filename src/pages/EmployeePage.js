@@ -72,7 +72,6 @@ export default function EmployeePage() {
       <Sidebar />
       <div className="flex w-full h-screen text-gray-700 font-sans">
         <main className="flex-1 p-8 overflow-auto bg-[#f1f6f9]">
-          <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Employees</h2>
 
             <div className="bg-white shadow rounded-lg overflow-hidden">
@@ -95,7 +94,7 @@ export default function EmployeePage() {
                         <button
                           // onClick={() => onEdit(emp.id)}
                           aria-label={`Edit ${emp.name}`}
-                          className="p-1 text-gray-600 hover:text-blue-600">
+                          className="p-1 text-gray-600 hover:text-primary">
                           <PencilIcon className="h-5 w-5" />
                         </button>
                         <button
@@ -114,14 +113,14 @@ export default function EmployeePage() {
                 </tbody>
               </table>
             </div>
-          </div>
+          
 
           {/* Floating Add Button */}
           {editingId === null && (
             <button
               onClick={openAddForm}
               aria-label="Add employee"
-              className="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+              className="fixed bottom-8 right-8 bg-primary hover:bg-primary/80 text-white rounded-full p-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
               <PlusIcon className="h-6 w-6" />
             </button>
           )}

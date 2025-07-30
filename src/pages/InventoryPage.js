@@ -73,8 +73,8 @@ export default function Inventory() {
           <button
             className={`py-2 px-4 -mb-px font-semibold border-b-2 ${
               activeTab === "all"
-                ? "border-blue-600 text-blue-600"
-                : "border-transparent text-gray-600 hover:text-blue-600"
+                ? "border-primary text-primary"
+                : "border-transparent text-gray-600 hover:text-primary"
             }`}
             onClick={() => setActiveTab("all")}
             aria-current={activeTab === "all" ? "page" : undefined}>
@@ -83,8 +83,8 @@ export default function Inventory() {
           <button
             className={`py-2 px-4 -mb-px font-semibold border-b-2 ${
               activeTab === "near-expiry"
-                ? "border-blue-600 text-blue-600"
-                : "border-transparent text-gray-600 hover:text-blue-600"
+                ? "border-blue-600 text-primary"
+                : "border-transparent text-gray-600 hover:text-primary"
             }`}
             onClick={() => setActiveTab("near-expiry")}
             aria-current={activeTab === "near-expiry" ? "page" : undefined}>
@@ -95,7 +95,7 @@ export default function Inventory() {
         {/* Inventory Table */}
         <div className="overflow-x-auto rounded bg-white shadow">
           <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-blue-50">
+            <thead className="bg-primary/10">
               <tr>
                 {activeTab === "all" && (
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" />
@@ -131,12 +131,12 @@ export default function Inventory() {
                     return (
                       <tr
                         key={id}
-                        className="hover:bg-blue-50 transition-colors">
+                        className="hover:bg-primary transition-colors">
                         {activeTab === "all" && (
                           <td className="px-6 py-3 flex gap-2 text-lg text-gray-600">
                             <button
                               aria-label={`Edit ${product}`}
-                              className="p-1 text-gray-600 hover:text-blue-600">
+                              className="p-1 text-gray-600 hover:text-primary">
                               <PencilIcon className="h-5 w-5" />
                             </button>
                             <button
